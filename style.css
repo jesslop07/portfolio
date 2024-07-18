@@ -216,45 +216,82 @@ button:hover {
 /* Compétences */
 
 /* Projets */
-
-.Projets {
+.photo-container{
     display: grid;
-    grid-template-columns: 5;
-    grid-template-rows: 6;
-    gap: 10px;
-}
-
-.photo-container {
-    cursor: pointer;
+    grid-template-rows:auto;
+    grid-template-areas:
+    "bloccaudalie blocairbnb blocetam"
+    "blocafricall blochm blocohmycafe";
+    gap: 20px ;
+    margin-left: 20px;
+    margin-right:20px;
+    margin-bottom: 20px;
     background-size: cover;
-    background-position: center;
-    width: 400px;
-    height: 400px;
     transform: scale(1);
-    transition: transform 200ms ease;
-}
+    transition: transform 300ms ease;
+    border-radius: 5px solid red;
 
-.photo-container:hover {
+  }
+  
+
+  .photo-container div:hover{
     filter: brightness(90%);
     transform: scale(1.02);
 }
 
-.padding-text {
-    padding-top: 47px;
+.bloccaudalie{
+    background-image: url(images/caudalie.png);
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    grid-area: bloccaudalie; 
 }
 
-.text_photos p {
-    background-color: #ffffffb5;
-    padding: 10px 25px;
+.blocairbnb{
+    background-image: url(images/airbnb.png);
+    background-size: cover;
+    grid-area: blocairbnb; 
+    width: 400px;
+    height: 400px;
 }
 
-.caudalie {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    background-image: url('..images/c.png');
-
+.blocetam{
+    background-image: url(images/etam.png);
+    background-size: cover;
+    grid-area: blocetam; 
+    width: 400px;
+    height: 400px;
 }
 
+.blocafricall{
+    background-image: url(images/africall.png);
+    background-size: cover;
+    grid-area: blocafricall; 
+    width: 400px;
+    height: 400px;
+}
 
+.blochm{
+    background-image: url(images/hm.png);
+    background-size: cover;
+    grid-area: blochm; 
+    width: 400px;
+    height: 400px;
+}
+
+.blocohmycafe{
+    background-image: url(images/ohmycafe.png);
+    background-size: cover;
+    grid-area: blocohmycafe; 
+    width: 400px;
+    height: 400px;
+}
+
+.photo-container p{
+    text-align: center;
+    background-color:red ;
+    color: white;
+
+}
 
 /* Projets */

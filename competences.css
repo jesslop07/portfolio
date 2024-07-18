@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #EE4266;
+    /* background-color: #ffe799; */
+}
+
+.containerheader {
+    background-image: url(../portfolio/images/Header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 800px;
+}
+.boxheader{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 230px auto auto;
+    grid-template-areas:
+    "logo accueil competences projets"
+    ". . . ."
+    "h2header h2header . ."
+    "pheader pheader . .";
+}
+.boxheader a{
+    text-transform: uppercase;
+}
+a{
+    margin: auto;
+    padding: 30px;
+    text-decoration: none;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+a:hover{
+    color: #f77e9a;
+}
+
+#logo{
+    grid-area: logo;
+}
+a img{
+    width: 50px;
+}
+#accueil {
+    grid-area: accueil;
+}
+#competences {
+    grid-area: competences;
+}
+#projets {
+    grid-area: projets;
+}
+#h2header{
+    grid-area: h2header;
+    padding-left: 130px;
+    font-size: xx-large;
+}
+#pheader{
+    grid-area: pheader;
+    padding-left: 50px;
+    text-align: center;
+}
+
+/* header */
+header {
+    display: grid;
+    grid-template-columns: 1fr fr;
+    /* align-items: ; */
+    /* justify-content: space-around; */
+    /* padding: 20px; */
+    /* background-color: #f8f8f8; */
+    /* border-bottom: 1px solid #EE4266; */
+}
+
+.logo img {
+    max-width: 3rem;
+    height: auto;
+    display: grid;
+    align-items: center;
+}
+
+.headerport nav {
+    gap: 20px;
+}
+
+.headerport a {
+    text-decoration: none;
+    /* color: #333; */
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.headerport a:hover {
+    /* background-color: #ddd; */
+    border-radius: 5px;
+    color: #f77e9a;
+
+}
+
+
+/* header fin */
+
+/* Compétences */
+.containerCompetences{
+    display: grid;
+    grid-template-columns: 6 ;
+    grid-template-rows: 6 ;
+    gap: 10px ;
+    }
+
+#btn{
+    background-color: #EE4266;
+    color: white;
+    cursor: pointer;
+    }
+
+#btn:hover{
+    background-color: #f77e9a;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #EE4266;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ .titre{
+    grid-column:1/6;
+    /* grid-row: 2/3; */
+    text-align: center;
+    align-content: center ;
+}
+  
+main{
+    /* border: solid orange; */
+    display: grid;
+    grid-column: 2/5;
+}
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
+    gap: 20rem;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.Bloc {
+    border: 2.5px solid #EE4266;
+    padding: 20px;
+    width: 20rem;
+    height: 20rem;
+    margin: 13px 0;
+}
+
+.dev1, .dev2, .design {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    gap: 15px;
+}
+
+figure {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+h2{
+    margin: 13px;
+    text-align: center;
+}
+
+h1{
+    margin: 20px;
+    font-size: 3rem;
+}
+
+/* Compétences */
+
+/* Footer */
+footer {
+    grid-column: 1/6;
+    grid-row: 6/7;
+    background-color: white;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+}
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+.social-media img {
+    width: 32px;
+    height: 32px;
+}
+.footer-bottom {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    font-size: 14px;
+    border-top: 1px solid #e7e7e7;
+}
+.footer-bottom p {
+    margin: 0;
+}
+/* Footer */
